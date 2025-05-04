@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Projekt: Wirtualna Kamera – Grafika Komputerowa i Wizualizacja (OKNO)
+    </title>
+    <style>
+      canvas {
+        border: 1px solid #000;
+        background: #e0e0e0;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Zadanie 2a: Algorytm malarski – Grafika Komputerowa i Wizualizacja (OKNO)</h3>
+    <div class="main">
+      <canvas id="trojkaty" width="1000" height="750"></canvas>
+        <div class="controls">
+          <div class="controls-section">
+            <div class="section-title">Obrót kamery w :</div>
+            <div class="button-controls">
+              <div class="button" id="r-lewo"><span class="caption">LEWO</span>(&#8592;)</div>
+              <div class="button" id="r-prawo"><span class="caption">PRAWO</span>(&#8594;)</div>
+              <div class="button" id="r-gora"><span class="caption">GÓRĘ</span>(&#8593;) </div>
+              <div class="button" id="r-dol"><span class="caption">DÓŁ</span>(&#8595;)</div>
+              <div class="button" id="rz-lewo"><span class="bigger">&#8634;</span> (R)</div>
+              <div class="button" id="rz-prawo"><span class="bigger">&#8635;</span> (F)</div>
+            </div>
+          </div>
+          <div class="controls-section">
+            <div class="section-title">Przesunięcie kamery w:</div>
+            <div class="button-controls">
+              <div class="button" id="t-lewo"><span class="caption">LEWO</span>(A)</div>
+              <div class="button" id="t-prawo"><span class="caption">PRAWO</span>(D)</div>
+              <div class="button" id="t-dol"><span class="caption">DÓŁ</span>(E)</div>
+              <div class="button" id="t-gora"><span class="caption">GÓRĘ</span>(Q)</div>
+              <div class="button" id="t-tyl"><span class="caption">TYŁ</span>(S)</div>
+              <div class="button" id="t-przod"><span class="caption">PRZÓD</span>(W)</div>
+            </div>  
+          </div>
+          <div class="controls-section">
+            <div class="section-title">Zoom:</div>
+            <div class="button-controls">
+              <div class="button" id="powieksz"><span class="bigger">+</span></div>
+              <div class="button" id="zmniejsz"><span class="bigger">-</span></div>
+            </div>
+          </div>
+    </div>
+
+    <script src="malarski.js"></script>
+  </body>
+</html>
